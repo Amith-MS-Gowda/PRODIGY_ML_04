@@ -1,0 +1,16 @@
+Description
+This script implements a convolutional neural network (CNN) for gesture recognition using images. It loads a dataset of gesture images, preprocesses them, trains a CNN model, evaluates its performance, and allows for real-time gesture recognition via a webcam.
+
+Key Features
+Data Loading: Loads images organized into subfolders for each gesture category and checks the dataset structure.
+Image Preprocessing: Converts images to grayscale, resizes them to 64x64 pixels, and normalizes pixel values.
+Label Encoding: Converts labels to a categorical format for multi-class classification.
+Data Splitting: Divides the dataset into training (80%) and testing (20%) sets.
+CNN Architecture: Builds a CNN with convolutional and max-pooling layers followed by dense layers for classification.
+Model Compilation: Compiles the model using the Adam optimizer and categorical cross-entropy loss.
+Data Augmentation: Applies transformations to training images to improve generalization.
+Model Training: Fits the model to training data with feedback on accuracy and loss.
+Model Evaluation: Evaluates performance on the test set and displays accuracy and confusion matrices.
+Real-Time Gesture Recognition: Uses webcam input for live predictions, displaying recognized gestures.
+Model Saving: Saves the trained model for future use.
+This script can be used in applications that require gesture-based control, enhancing user interaction with devices.
